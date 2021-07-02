@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+from src import parse_args, main
+from typing import List
+
+
+def entrypoint() -> int:
+    args: List[List[float]] = parse_args()
+    return main(args)
+
+
+if __name__ == "__main__":
+    exit(entrypoint())

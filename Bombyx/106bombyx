@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+from src import parse_args
+from src import main
+
+
+def entrypoint() -> int:
+    args = parse_args()
+
+    return main(args)
+
+
+if __name__ == "__main__":
+    exit(entrypoint())

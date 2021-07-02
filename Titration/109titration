@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+from src.args import parse_args
+from src.titration import main
+
+
+def entrypoint() -> int:
+    values = parse_args()
+
+    return main(values)
+
+
+if __name__ == "__main__":
+    exit(entrypoint())
